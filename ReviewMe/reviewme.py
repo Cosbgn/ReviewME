@@ -6,3 +6,5 @@ def create_app():
   Bootstrap(app)
 
   return app
+
+  print ('hello world')

@@ -1,2 +1,2 @@
-from yourapplication import app
+from reviewme import app
 app.run(debug=True)
