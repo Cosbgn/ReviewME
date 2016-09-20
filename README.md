@@ -3,7 +3,7 @@
 ### Todo
 
 - Install basic Flask app on AWS
-- Apply Bootstrap template using Jinja 2 
+- Apply Bootstrap template using Jinja 2
 - Create a user login page
 - Map each user with a subdomain or page (user.example.com or example.com/user)
 - Auto generate a landing page for each user with a rating form
