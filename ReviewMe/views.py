@@ -1,7 +1,10 @@
-from flask import current_app, Blueprint, jsonify
-api = Blueprint('api', __name__)
+from flask import render_template
+from app import app
 
-@api.route("/")
+@app.route('/')
+@app.route('/index')
 def index():
-     # We can use "current_app" to have access to our "app" object
-     return "Hello World!"
+    user = {'nickname': 'Miguel'}  # fake user
+    return render_template('index.html',
+                           title='Home',
+                           user=user)

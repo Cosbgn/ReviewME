@@ -1,12 +1,7 @@
-{% extends "bootstrap/base.html" %}
-{% block title %}This is an example page{% endblock %}
-
-{% block navbar %}
-<div class="navbar navbar-fixed-top">
-  <!-- ... -->
-</div>
-{% endblock %}
-
+{% extends "base.html" %}
 {% block content %}
-  <h1>Hello, Bootstrap</h1>
+    <h1>Hi, {{ user.nickname }}!</h1>
+    {% for post in posts %}
+    <div><p>{{ post.author.nickname }} says: <b>{{ post.body }}</b></p></div>
+    {% endfor %}
 {% endblock %}
