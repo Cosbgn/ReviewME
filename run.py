@@ -1,3 +1,2 @@
-#!flask/bin/python
-from app import app
-#app.run(debug=True)
+from review_app import app
+app.run(debug=True)

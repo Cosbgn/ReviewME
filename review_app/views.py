@@ -1,8 +1,5 @@
-from flask import Flask
-app = Flask(__name__)
-#config.from_object('config')
-#from app import views
-
+from flask import render_template
+from review_app import app
 
 @app.route('/')
 def hello_world():
