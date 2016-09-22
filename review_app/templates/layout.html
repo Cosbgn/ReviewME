@@ -6,7 +6,7 @@
     <title>{% block title %}{% endblock %} - Review Me</title>
     <strong><nav>
       <ul class="menu">
-        <li><a href="{{ url_for('home') }}">Home</a></li>
+        <li><a href="{{ url_for('index') }}">Home</a></li>
         <li><a href="{{ url_for('login') }}">Login</a></li>
       </ul>
     </nav></strong>
@@ -16,7 +16,7 @@
     <div id="content">{% block content %}{% endblock %}</div>
     <div id="footer">
       {% block footer %}
-      &copy; Copyright 2016 by <a href="www.Review.me">ReviewME</a>.
+      &copy; Copyright 2016 by <a href="www.Review.me">Review ME</a>.
       {% endblock %}
     </div>
   </body>
