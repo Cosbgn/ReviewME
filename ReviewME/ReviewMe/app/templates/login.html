@@ -1,0 +1,21 @@
+<!-- extended from layout.html -->
+{% extends "layout.html"%}
+
+{% block content%}
+   <h1>Login:</h1>
+   <div class="login-container">
+   <form action="" method="post" name="login">
+         {{ form.csrf_token }}
+         {{ form.hidden_tag() }}
+         {{form.username.label }} {{form.username()}}<br>
+         {{form.password.label }} {{form.password()}}<br>
+         {{form.submit()}}
+
+   </form>
+   </div>
+   {%if succeed%}
+     <p class="succeed"><strong>{{ succeed}}</strong>
+   {%elif error %}
+     <p class="error"><strong>Error:</strong> {{ error }}
+   {% endif %}
+{% endblock %}

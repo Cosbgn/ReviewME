@@ -1,0 +1,18 @@
+{% extends "layout.html"%}
+{% block content%}
+   <h1> Hi, {{ user.nickname}}! </h1>
+   <br>
+   <p> Welcome to ReviewMe,<br>
+   here you can Review your Company and take customer suggestions.</p>
+   <br>
+   <div class="signblock">
+   <form action="" method="post" name="signin">
+    <input type="text" placeholder="Company" name="company" value=""><br>
+    <input type="text" placeholder="E-mail" name="email" value=""><br>
+    <input type="text" placeholder="Username" name="username" value=""><br>
+    <input type="password" placeholder="Password" name="password" value=""><br>
+    
+     <p><input type="submit" value="Sign In"></p>
+   </form>
+   </div>
+{% endblock%}
